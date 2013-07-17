@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectDiff", "ObjectDiff\ObjectDiff.csproj", "{DA9D3F14-50B4-4058-A0F9-F2DB058A988C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{84007B23-34D1-41B4-92C8-D21468F5E855}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA9D3F14-50B4-4058-A0F9-F2DB058A988C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA9D3F14-50B4-4058-A0F9-F2DB058A988C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA9D3F14-50B4-4058-A0F9-F2DB058A988C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA9D3F14-50B4-4058-A0F9-F2DB058A988C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84007B23-34D1-41B4-92C8-D21468F5E855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84007B23-34D1-41B4-92C8-D21468F5E855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84007B23-34D1-41B4-92C8-D21468F5E855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84007B23-34D1-41B4-92C8-D21468F5E855}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

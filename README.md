@@ -1,19 +1,22 @@
 ObjectComparer
 -----------
 
-Provide before and after, then ObjectComparer will identify the differences as what is added, what is deleted and what is changed.
+Provide before and after, then ObjectComparer will identify the differences as 
+what is added, what is deleted and what is changed.
 
-Added and removed objects can be identified when the comparing object has ```IEnumerable```. To distinguish "changed" elements from added and deleted elements, your ```IEnumerable``` element type should implement ```IComparableObject```, which requires ```Id``` and ```IdentifyingText```. 
+Added and removed objects can be identified when the compared object has ```IEnumerable```. 
+To distinguish "changed" elements from added and deleted elements, your ```IEnumerable```'s element type
+should implement ```IComparableObject```, which requires ```Id``` and ```IdentifyingText```. 
 
 * If the Id is found only in before, it is deleted. 
 * If Id is found only in after, it is added. 
-* If found both, it may be changed or the same.
+* If found both, ObjectComparer will go deeper to see if it is changed or not.
 
 Sample usage:
 ```c#
     private void ShowDifferences(IComparableObject before, IComparableObject after)
     {
-  	var comparer = new ObjectComparer();
+		var comparer = new ObjectComparer();
 		var differences = comparer.Compare("", before, after).ToList();
 		foreach (var difference in differences)
 			Debug.Print(difference.GetDescription() + "\r\n");
@@ -46,7 +49,7 @@ To Dos
 -----------
 * ```Compare()``` method doesn't have to accept ```IComparableObject```. IComparableObject is needed only when it is used as ```IEnumerable``` element.
 * When the compared field or property is 
-** not an IEnumerable and 
-** not defined in AttributeComparer, and 
-** it is a complex type, 
-ObjectComparer should go deeper and compare attributes automatically, rather than relying on .Equal().
+	* not an IEnumerable and 
+	* not defined in AttributeComparer, and 
+	* it is a complex type, 
+	ObjectComparer should go deeper and compare attributes automatically, rather than relying on .Equal().

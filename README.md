@@ -42,6 +42,13 @@ FieldStringValue: 3 => 3changed
 PropertyLongValue: 4 => 5
 PropertyStringValue: 5 => 5changed
 ```
+*Difference* can be *AddedObject*, *DeletedObject* or *ChangedObject*. 
+
+*Difference* implements FullPath(), which returns the concatenated route from the root to the target object,
+like demonstrated above, ```Object 1, Child 2, GrandChild 21```.
+
+If you need to do any custom handling, 
+you can get the reference to actual object from *AddedObject*, *DeletedObject* or *ChangedObject*.
 
 It detects changes in both fields and properties.
 

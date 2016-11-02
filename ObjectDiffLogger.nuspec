@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ObjectDiffLogger</id>
+    <version>1.0.0</version>
+    <title>Object Diff Logger</title>
+    <authors>Kenneth Choe</authors>
+    <owners>Kenneth Choe</owners>
+    <licenseUrl>https://github.com/kennethchoe/ObjectDiff/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/kennethchoe/ObjectDiff</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Compare properties and fields, and return the difference as array.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>object diff</tags>
+  </metadata>
+  <files>
+    <file src="ObjectDiff\bin\Release\ObjectDiff.dll" target="lib\net40\ObjectDiff.dll" />
+    <file src="ObjectDiff\bin\Release\ObjectDiff.pdb" target="lib\net40\ObjectDiff.pdb" />
+  </files>
+</package>
